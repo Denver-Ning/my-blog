@@ -18,14 +18,14 @@ const { pageTitle } = Astro.props;
     <div class="baseLayoutContainer">
       <!-- <h1>{pageTitle}</h1> -->
       <slot />
+      <Footer />
     </div>
-    <Footer />
     <script>
       import "../scripts/menu.js";
     </script>
   </body>
   <style>
-    .baseLayoutContainer{
+    .baseLayoutContainer {
       box-shadow: 0 0 15px #1d1c1a1a;
       background: #fff;
       border-radius: 6px;
