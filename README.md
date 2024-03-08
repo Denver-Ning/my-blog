@@ -1,5 +1,5 @@
 # Astro Starter Kit: Minimal
-
+[blog:](https://silly-conkies-be7b99.netlify.app/)
 ```sh
 npm create astro@latest -- --template minimal
 ```
