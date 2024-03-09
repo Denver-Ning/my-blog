@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout>
   <h1>{frontmatter.title}</h1>
-  <p>发表于： {frontmatter.pubDate.toString().slice(0, 10)}</p>
+  <p>发表于： {frontmatter.pubDate.toString().slice(0, 10)}  阅读：{frontmatter.minutesRead}</p>
   <div class="tags">
     {
       frontmatter.tags.map((tag) => (
