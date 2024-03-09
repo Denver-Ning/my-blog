@@ -6,6 +6,7 @@ export function remarkReadingTime() {
     const textOnPage = toString(tree);
     const readingTime = getReadingTime(textOnPage);
     // readingTime.text 会以友好的字符串形式给出阅读时间，例如 "3 min read"。
+    readingTime.text = readingTime.text.replace('min read', '分钟阅读');
     data.astro.frontmatter.minutesRead = readingTime.text;
   };
 }
