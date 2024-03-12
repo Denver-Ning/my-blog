@@ -7,9 +7,6 @@ author: 帅宁
 tags: ['react']
 ---
 
-# react-19-features
-# react-19-features
-
 ## use() Hook
 
 `use` Hook 目前仅在React的Canary和实验通道中可用，可以在[React’s release channels here](https://react.dev/community/versioning-policy#all-release-channels) 了解有关React发布渠道的更多信息

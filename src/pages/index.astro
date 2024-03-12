@@ -3,7 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogIndex from "../components/BlogIndex";
 const pageTitle = "首页";
 const allPost = await Astro.glob("./posts/*.md");
-allPost.reverse(); // 反转数组
+// 根据时间排序
+allPost.sort((a, b) => {
+  const dateA = new Date(a.frontmatter.pubDate);
+  const dateB = new Date(b.frontmatter.pubDate);
+  return dateB - dateA;
+});
 const filterDate = (date) => {
   const dateObj = new Date(date);
   const splitDate = dateObj.toISOString().split("T")[0];
